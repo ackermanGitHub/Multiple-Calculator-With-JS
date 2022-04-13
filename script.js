@@ -79,3 +79,10 @@ function calcularAreaCirculo(){
     const area = areaCirculo(value);
     alert(area);
 }
+
+//Reto: matemáticas con javascript
+function alturaTriangulo(lado1, lado2, base){
+    if(lado1 === lado2){
+        return Math.sqrt((lado1**2)-((base/2)**2));
+    }
+}
