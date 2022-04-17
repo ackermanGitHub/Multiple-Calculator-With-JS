@@ -1,50 +1,3 @@
-const lista1 = [
-    100,
-    200,
-    300,
-    400,
-    500,
-];
-
-const lista2 = [
-    100,
-    200,
-    300,
-    400,
-    500,
-    600,
-];
-
-const lista3 = [
-    200,
-    100,
-    500,
-    300,
-    900,
-    800,
-];
-
-const lista4 = [
-    200,
-    500,
-    12,
-    15,
-    5,
-    800,
-    578,
-    432,
-    231,
-    10000,
-    1256
-];
-
-const lista5 = [
-    "March",
-    "Jan", 
-    "Feb",
-    "Dec",
-];
-
 function calcularMediaAritmetica(lista){
     const sumaLista = lista.reduce(
         function (valorAcumulado = 0, nuevoElemento){
@@ -70,7 +23,7 @@ function calcularMediana(lista){
     return mediana;
 }
 
-//OrdenarLista con un ciclo for
+//Ordenar Lista con un ciclo for
 function ordenar(listaD) {
     let listaO = listaD;
     let paso = 0;
