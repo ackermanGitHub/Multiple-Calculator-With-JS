@@ -6,6 +6,7 @@
 html {
     font-size: 62.5%;
     background-color: lightblue;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header--title-container {
@@ -17,7 +18,6 @@ html {
 .header--title-container .header-title{
     margin-bottom: 10px;
     font-size: 2.4rem;
-    font-family: sans-serif;
 }
 .header--title-container .header-description{
     font-size: 1.2rem;
