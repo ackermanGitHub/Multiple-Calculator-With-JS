@@ -105,3 +105,6 @@ dist
 
 # Configuración de Visual Studio Code
 .vscode
+
+# Imágenes usadas
+assets
