@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <header>
+        <h1>Calculando la Media Aritmética de una lista</h1>
+        <img src="./assets/moda.png" alt="" class="moda-img">
+    </header>
+    <main>
+        <section class="main--figure-container">
+            <h2 class="cuadrado-container--title">
+                Media aritmética
+            </h2>
+            <form class="figure--form-container">
+                <label for="InputLista">
+                   Escribe cada elemento de tu lista:
+                </label>
+                <input id="InputLista1" type="number" placeholder="Elemento1">
+                <input id="InputLista2" type="number" placeholder="Elemento2">
+                <input id="InputLista3" type="number" placeholder="Elemento3">
+                <input id="InputLista4" type="number" placeholder="Elemento4">
+                <input id="InputLista5" type="number" placeholder="Elemento5">
+                <button  type="button" onclick="OnClickButton()">Calcular la Media Aritmética</button>                
+            <p id="ResultP"></p>
+            </form>
+        </section>
+    </main>
+    <script src="./media.js"></script>
+</body>
+</html>

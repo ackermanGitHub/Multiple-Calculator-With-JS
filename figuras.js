@@ -34,14 +34,16 @@ function calcularPerimetroCuadrado(){
     const value = input.value;
     
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+    const resultP = document.getElementById("resultCuadrado");
+    resultP.innerText = "El Perímetro del cuadrado es:   " + perimetro +"cm";
 }
 function calcularAreaCuadrado(){
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     
     const area = areaCuadrado(value);
-    alert(area);
+    const resultP = document.getElementById("resultCuadrado");
+    resultP.innerText = "El Área del cuadrado es:   " + area +"cm^2";
 }
 //Código del triángulo
 function calcularPerimetroTriangulo(){
@@ -53,7 +55,8 @@ function calcularPerimetroTriangulo(){
     const value3 = parseInt(input3.value);
     
     const perimetro = perimetroTriangulo(value1, value2, value3);
-    alert(perimetro);
+    const resultP = document.getElementById("resultTriangulo");
+    resultP.innerText = "El Perímetro del Triángulo es:   " + perimetro +"cm";
 }
 function calcularAreaTriangulo(){
     const input1 = document.getElementById("InputTrianguloBase");
@@ -62,7 +65,8 @@ function calcularAreaTriangulo(){
     const value2 = parseFloat(input2.value);
     
     const area = areaTriangulo(value1, value2);
-    alert(area);
+    const resultP = document.getElementById("resultTriangulo");
+    resultP.innerText = "El Perímetro del Triángulo es:  " + area +"cm^2";
 }
 //Código del circulo
 function calcularPerimetroCirculo(){
@@ -70,12 +74,14 @@ function calcularPerimetroCirculo(){
     const value = input.value;
     
     const perimetro = perimetroCirculo(value);
-    alert(perimetro);
+    const resultP = document.getElementById("resultCirculo");
+    resultP.innerText = "El Perímetro del Círculo es:   " + perimetro +"cm";
 }
 function calcularAreaCirculo(){
     const input = document.getElementById("InputCirculo");
     const value = input.value;
     
     const area = areaCirculo(value);
-    alert(area);
+    const resultP = document.getElementById("resultCirculo");
+    resultP.innerText = "El Área del Círculo es:   " + area +"cm^2";
 }

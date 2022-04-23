@@ -5,29 +5,71 @@
 }
 html {
     font-size: 62.5%;
-    background-color: lightblue;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: darkblue;
 }
 
 .header--title-container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px 0;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    background-color: yellow;
+    box-shadow: 0px 5px 25px 2px rgba(0,0,0,0.75);
+    border-radius: 30px; 
+    margin: 0 auto;
+    margin-top: 10px;
 }
-.header--title-container .header-title{
-    margin-bottom: 10px;
+.header-title{
     font-size: 2.4rem;
-}
-.header--title-container .header-description{
-    font-size: 1.2rem;
+    margin-top: 20px;
 }
 
-.main--figure-container {
+main {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: auto;
+    text-align: center;
+    padding: 0px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 25px 2px rgba(0,0,0,0.75);
+    background-color: white;
+    min-width: 280px;
+    max-width: 400px;
 }
+ .main--cuadrado-container {
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+.main--triangulo-container {
+    margin: 0 10px;
+    margin-bottom: 20px;
+}
+
+.main--circulo-container {
+    width: 60%;
+    min-height: 400px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+} 
+
 .figure--form-container {
     display: flex;
     flex-direction: column;
@@ -38,19 +80,52 @@ html {
     margin-top: 5px;
 }
 button {
-    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75); 
+}
+.last-button {
+    margin-bottom: 40px;
+}
+input {
+    width: 50%;
     padding: 5px;
     border-radius: 10px;
     border: 1px solid gray;
 }
-input {
-    background-color: aliceblue;
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid gray;
+.last-input {
+    margin-bottom: 10px;
 }
 label {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 5px 0;
+}
+.section-title {
+    font-size: 1.8rem;
+}
+.triangulo-container--title {
+    line-height: 2rem;
+}
+.cuadrado-container--title {
+    line-height: 2rem;
+    margin: 0px 30px;
+}
+.cuadrado--form {
+    margin: 0px 20px;
+}
+.img-section {
+    width: 40%;
+    margin-top: 30px;
+}
+.circulo-img {
+    width: 20%;
+}
+
+.figura_img {
+    width: 50%;
+}
+.result {
+    font-size: 2 rem;
 }

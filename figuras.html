@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figuras geométricas | Curso Práctico de JavasCript en  Platzi</title>
+    <title>Figuras geométricas</title>
     <link rel="stylesheet" href="./figuras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,56 +16,50 @@
             <h1 class="header-title">
                 Figuras geométricas
             </h1>
-            <p class="header-description">Este es el primer taller del curso práctico de JavaScript</p>
+            <img src="./assets/figuras_page.png" alt="" class="figura_img">
         </div>        
     </header>
     <main>
-        <section class="main--figure-container">
-            <h2 class="cuadrado-container--title">
-                Calcula el área y perímetro de un cuadrado
-            </h2>
-            <form class="figure--form-container">
-                <label for="InputCuadrado" class="cuadrado--form">
-                   Escribe cuanto mide cada lado de tu cuadrado:
-                </label>
-                <input id="InputCuadrado" type="number">
-                <button  type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
-                <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-            </form>
-        </section>
-        <section class="main--figure-container">
-            <h2>
+        <section class="main--triangulo-container">
+            <h2 class="triangulo-container--title section-title">
                 Calcula el área y perímetro de un triángulo
             </h2>
+            <img src="./assets/triangulo.png" alt="" class="triangulo-img img-section">
             <form class="figure--form-container">
                 <label for="InputTrianguloLado1">
                    Escribe cuanto mide cada lado de tu triángulo:
                 </label>
-                <input id="InputTrianguloLado1" type="number">
-                <input id="InputTrianguloLado2" type="number">
-                <label for="InputTrianguloBase">
-                    Base
-                </label>
-                <input id="InputTrianguloBase" type="number">
-                <label for="InputTrianguloAltura">
-                    Altura
-                </label>
-                <input id="InputTrianguloAltura" type="number">
+                <input id="InputTrianguloLado1" type="number" placeholder="Lado A">
+                <input id="InputTrianguloLado2" type="number" placeholder="Lado B">                
+                <input id="InputTrianguloBase" type="number" placeholder="Base">
+                <input id="InputTrianguloAltura" type="number" placeholder="Altura" class="last-input">
                 <button  type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
-                <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+                <button type="button" onclick="calcularAreaTriangulo()" class="last-button">Calcular el área</button>
+                <p id="resultTriangulo" class="result-triangulo result"></p>
             </form>
         </section>
-        <section class="main--figure-container">
-            <h2>
+        <section class="main--cuadrado-container">
+            <h2 class="cuadrado-container--title section-title">
+                Calcula el área y perímetro de un cuadrado
+            </h2>
+            <img src="./assets/cuadrado.png" alt="" class="cuadrado-img img-section">
+            <form class="figure--form-container">
+                <input id="InputCuadrado" type="number" placeholder="Lado" class="last-input">
+                <button  type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()" class="last-button">Calcular el área</button>
+                <p id="resultCuadrado" class="result-cuadrado result"></p>
+            </form>
+        </section>
+        <section class="main--circulo-container">
+            <h2 class="circulo-container--title section-title">
                 Calcula el área y perímetro de un circulo
             </h2>
+            <img src="./assets/circle.png" alt="" class="circulo-img img-section">
             <form class="figure--form-container">
-                <label for="InputCirculo">
-                   Escribe cuanto mide cada radio de tu circulo:
-                </label>
-                <input id="InputCirculo" type="number">
+                <input id="InputCirculo" type="number" class="last-input" placeholder="Radio">
                 <button  type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
-                <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+                <button type="button" onclick="calcularAreaCirculo()" class="last-button">Calcular el área</button>
+                <p id="resultCirculo" class="result-circulo result"></p>
             </form>
         </section>
     </main>
