@@ -12,12 +12,13 @@ a {
 }
 
 /* Nav */
-nav{
+.header-nav{
     display: flex;
     flex-direction: row-reverse;
-    position: inherit;
+    position: fixed;
+    top: 10px;
     height: 7vh;
-    width: 90%;
+    width: 97%;
     min-width: 300px;
     background-color: gray;
     border-radius: 15px;
@@ -30,8 +31,10 @@ nav{
     margin-right: 7%;
 }
 .sidebar-img {
+    cursor: pointer;
     width: 30px;
-    height: 30px;
+    height: 30px;    
+    margin-top: 4px;
 }
 /* Sidebar Container */
 .sidebar {    
@@ -44,9 +47,16 @@ nav{
     background: white;
     display: flex;
     flex-direction: column;
-    box-shadow: darkred;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.3s;
     transform: translate(-100%);
+}
+.ul-fab li {
+    background: white;
+    transition: border 0.3s;
+}
+.ul-fab li:hover {
+    background: #444;
+    border-left: 5px solid #eee;
 }
 .show-sidebar{
     transform: translate(0);
@@ -76,13 +86,15 @@ nav{
     font-weight: 900;
     color: white;     
 }
+/* Close-sidebar Button */
 .close-btn{
     background-color: white;
     width: auto;
     border: none;
     margin-right: 2%;
 }
-.close-sidebar-img {
+.close-sidebar-img {    
+    cursor: pointer;
     width: 30px;
     height: 30px;
 }
@@ -112,7 +124,7 @@ header {
 header h1 {
     font-size: 2.4rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .calculator-svg {
     margin-top: 20px;
@@ -154,12 +166,6 @@ main {
     width: 100px;
 }
 .promedio-png {
-    width: 100px;
-}
-.mediana-png {
-    width: 100px;
-}
-.moda-png {
     width: 100px;
 }
 .salarios-svg {

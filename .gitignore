@@ -106,3 +106,5 @@ dist
 # Configuración de Visual Studio Code
 .vscode
 
+# Configuracion de estilos de VSCode
+.code-workspace
