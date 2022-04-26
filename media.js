@@ -25,7 +25,6 @@ function OnClickButton () {
     const input5 = document.getElementById("InputLista5");
     const value5 = input5.value;
     if(value5 != ''){lista.push(parseInt(value5))};
-    console.log(lista);
     if (lista.length != 0){
         const media = calcularMediaAritmetica(lista);
         const resultP = document.getElementById("ResultP");

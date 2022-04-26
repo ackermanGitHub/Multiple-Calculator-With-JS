@@ -11,6 +11,97 @@ a {
     text-decoration: none;
 }
 
+/* Nav */
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    position: inherit;
+    height: 7vh;
+    width: 90%;
+    min-width: 300px;
+    background-color: gray;
+    border-radius: 15px;
+}
+/* Nav Sidebar-Opener */
+.sidebar-toggle {
+    background-color: transparent;
+    width: auto;
+    border: none;
+    margin-right: 7%;
+}
+.sidebar-img {
+    width: 30px;
+    height: 30px;
+}
+/* Sidebar Container */
+.sidebar {    
+    box-shadow: 0px 5px 25px 2px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: darkred;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translate(-100%);
+}
+.show-sidebar{
+    transform: translate(0);
+}
+/* PegaPega Logo */
+.aside-logo {
+    display: flex;    
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.nav-logo{    
+    margin-left: 7%;
+}
+.nav--logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;    
+    text-align: center;
+    width: 55px;
+    height: 55px;
+    background-color: red;
+    border-radius: 50%;
+}
+.nav--logo-container h6 {
+    font-size: 1.4rem;  
+    font-weight: 900;
+    color: white;     
+}
+.close-btn{
+    background-color: white;
+    width: auto;
+    border: none;
+    margin-right: 2%;
+}
+.close-sidebar-img {
+    width: 30px;
+    height: 30px;
+}
+/* Social Networks List */
+.ul-fab {
+    margin-top: 40px;
+    margin-left: 7%;
+}
+.li-fab {
+    margin-top: 20px;
+}
+.fab {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+
 header {
     display: flex;
     justify-content: center;
@@ -21,6 +112,7 @@ header {
 header h1 {
     font-size: 2.4rem;
     text-align: center;
+    margin-top: 20px;
 }
 .calculator-svg {
     margin-top: 20px;
