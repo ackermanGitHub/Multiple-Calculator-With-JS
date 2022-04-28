@@ -13,16 +13,49 @@ a {
 
 /* Nav */
 .header-nav{
-    display: flex;
-    flex-direction: row-reverse;
-    position: fixed;
+    display: flex;     
+    align-items: center;
+    justify-content: space-between;
     top: 10px;
     height: 7vh;
     width: 97%;
     min-width: 300px;
-    background-color: gray;
     border-radius: 15px;
 }
+
+/* PegaPega Logo */
+.nav-logo{    
+    margin-left: 10%;
+}
+.nav--logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;    
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.nav--logo-container h6 {
+    font-size: 1rem;  
+    font-weight: 900;
+    color: white;     
+}
+
+/* Nav Buttons */
+.nav--buttons-container {
+    display: flex;
+    
+}
+.nav-buttons {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-right: 20px;
+}
+
 /* Nav Sidebar-Opener */
 .sidebar-toggle {
     background-color: transparent;
@@ -50,6 +83,11 @@ a {
     transition: all 0.3s;
     transform: translate(-100%);
 }
+.aside-logo {
+    display: flex;    
+    margin-top: 60px;    
+    justify-content: flex-end;
+}
 .ul-fab li {
     background: white;
     transition: border 0.3s;
@@ -61,37 +99,12 @@ a {
 .show-sidebar{
     transform: translate(0);
 }
-/* PegaPega Logo */
-.aside-logo {
-    display: flex;    
-    justify-content: space-between;
-    margin-top: 60px;
-}
-.nav-logo{    
-    margin-left: 7%;
-}
-.nav--logo-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;    
-    text-align: center;
-    width: 55px;
-    height: 55px;
-    background-color: red;
-    border-radius: 50%;
-}
-.nav--logo-container h6 {
-    font-size: 1.4rem;  
-    font-weight: 900;
-    color: white;     
-}
 /* Close-sidebar Button */
 .close-btn{
     background-color: white;
     width: auto;
     border: none;
-    margin-right: 2%;
+    margin-right: 5%;
 }
 .close-sidebar-img {    
     cursor: pointer;
@@ -101,7 +114,7 @@ a {
 /* Social Networks List */
 .ul-fab {
     margin-top: 40px;
-    margin-left: 7%;
+    margin-left: 15%;
 }
 .li-fab {
     margin-top: 20px;
