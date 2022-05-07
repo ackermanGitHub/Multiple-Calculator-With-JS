@@ -66,7 +66,7 @@ function calcularAreaTriangulo(){
     
     const area = areaTriangulo(value1, value2);
     const resultP = document.getElementById("resultTriangulo");
-    resultP.innerText = "El Perímetro del Triángulo es:  " + area +"cm^2";
+    resultP.innerText = "El Área del Triángulo es:  " + area +"cm^2";
 }
 //Código del circulo
 function calcularPerimetroCirculo(){

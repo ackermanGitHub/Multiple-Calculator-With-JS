@@ -7,10 +7,10 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
-
-body{
-    background-color: darkblue;
+a {
+    text-decoration: none;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -188,7 +188,7 @@ input {
     border-radius: 10px;
     border: 1px solid gray;
 }
-button {
+.on-button {
     font-size: 1.5rem;
     padding: 5px;
     margin-top: 10px;

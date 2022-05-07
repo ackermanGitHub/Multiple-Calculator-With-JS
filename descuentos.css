@@ -7,10 +7,10 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
-
-body{
-    background-color: darkblue;
+a {
+    text-decoration: none;
 }
+
 
 header {    
     display: flex;
@@ -26,7 +26,7 @@ header {
     margin-top: 10px;
 }
 .percent-img {
-    width: 200px;
+    width: 130px;
     margin: 10px 0;
 }
 

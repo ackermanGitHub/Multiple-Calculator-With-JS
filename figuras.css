@@ -7,8 +7,8 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
-body {
-    background-color: darkblue;
+a {
+    text-decoration: none;
 }
 
 .header--title-container {
@@ -26,7 +26,6 @@ body {
 }
 .header-title{
     font-size: 2.4rem;
-    margin-top: 20px;
 }
 
 /* Nav */
@@ -193,12 +192,6 @@ section {
 .figure--form-container > button, input {
     margin-top: 5px;
 }
-button {
-    padding: 5px;
-    border-radius: 10px;
-    border: 1px solid gray;
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75); 
-}
 .last-button {
     margin-bottom: 40px;
 }
@@ -234,7 +227,7 @@ label {
     margin-top: 30px;
 }
 .circulo-img {
-    width: 20%;
+    width: 100px;
 }
 
 .figura_img {
@@ -242,4 +235,13 @@ label {
 }
 .result {
     font-size: 2 rem;
+}
+
+.on-buttons {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 75%);
 }
