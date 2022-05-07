@@ -7,7 +7,6 @@ html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
-
 body {
     background-color: darkblue;
 }
@@ -28,6 +27,121 @@ body {
 .header-title{
     font-size: 2.4rem;
     margin-top: 20px;
+}
+
+/* Nav */
+.header-nav{
+    display: flex;     
+    align-items: center;
+    justify-content: space-between;
+    top: 10px;
+    height: 7vh;
+    width: 97%;
+    min-width: 300px;
+    border-radius: 15px;
+}
+
+/* PegaPega Logo */
+.nav-logo{    
+    margin-left: 10%;
+}
+.nav--logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;    
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+.nav--logo-container h6 {
+    font-size: 1rem;  
+    font-weight: 900;
+    color: white;     
+}
+
+/* Nav Buttons */
+.nav--buttons-container {
+    display: flex;
+    
+}
+.nav-buttons {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    margin-right: 20px;
+}
+
+/* Nav Sidebar-Opener */
+.sidebar-toggle {
+    background-color: transparent;
+    width: auto;
+    border: none;
+    margin-right: 7%;
+}
+.sidebar-img {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;    
+    margin-top: 4px;
+}
+/* Sidebar Container */
+.sidebar {    
+    box-shadow: 0px 5px 25px 2px rgba(0,0,0,0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+    transform: translate(-100%);
+}
+.aside-logo {
+    display: flex;    
+    margin-top: 60px;    
+    justify-content: flex-end;
+}
+.ul-fab li {
+    background: white;
+    transition: border 0.3s;
+}
+.ul-fab li:hover {
+    background: #444;
+    border-left: 5px solid #eee;
+}
+.show-sidebar{
+    transform: translate(0);
+}
+/* Close-sidebar Button */
+.close-btn{
+    background-color: white;
+    width: auto;
+    border: none;
+    margin-right: 5%;
+}
+.close-sidebar-img {    
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+/* Social Networks List */
+.ul-fab {
+    margin-top: 40px;
+    margin-left: 15%;
+}
+.li-fab {
+    margin-top: 20px;
+}
+.fab {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
 }
 
 main {
